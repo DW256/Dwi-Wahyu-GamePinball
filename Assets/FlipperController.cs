@@ -4,35 +4,47 @@ using UnityEngine;
 
 public class FlipperController : MonoBehaviour
 {
-    public KeyCode leftFlipperKey = KeyCode.A;
-    public KeyCode rightFlipperKey = KeyCode.D;
+    public KeyCode flipperKey;
     public float flipperForce = 1000f;
-    public float maxRotationAngle = 45f;
+    public float flipperRestPosition = 0f;
+    public float flipperPressedPosition = 45f;
 
-    public Rigidbody leftFlipperRigidbody;
-    public Rigidbody rightFlipperRigidbody;
+    private HingeJoint hingeJoint;
 
-   
+    private void Start()
+    {
+        hingeJoint = GetComponent<HingeJoint>();
+        hingeJoint.useSpring = true;
+    }
 
     private void Update()
     {
-        if (Input.GetKeyDown(leftFlipperKey))
+        if (Input.GetKey(flipperKey))
         {
-            leftFlipperRigidbody.AddTorque(Vector3.up * flipperForce, ForceMode.Impulse);
+            ApplyFlipperForce();
         }
-
-        if (Input.GetKeyDown(rightFlipperKey))
+        else
         {
-            rightFlipperRigidbody.AddTorque(Vector3.up * -flipperForce, ForceMode.Impulse);
+            ResetFlipperPosition();
         }
-
-        LimitFlipperRotation(leftFlipperRigidbody, -maxRotationAngle, 0f);
-        LimitFlipperRotation(rightFlipperRigidbody, 0f, maxRotationAngle);
     }
 
-    private void LimitFlipperRotation(Rigidbody flipperRigidbody, float minAngle, float maxAngle)
+    private void ApplyFlipperForce()
     {
-        Quaternion rotation = Quaternion.Euler(0f, Mathf.Clamp(flipperRigidbody.rotation.eulerAngles.y, minAngle, maxAngle), 0f);
-        flipperRigidbody.MoveRotation(rotation);
+        JointSpring jointSpring = new JointSpring();
+        jointSpring.spring = flipperForce;
+        jointSpring.damper = 0f;
+        jointSpring.targetPosition = flipperPressedPosition;
+        hingeJoint.spring = jointSpring;
     }
+
+    private void ResetFlipperPosition()
+    {
+        JointSpring jointSpring = new JointSpring();
+        jointSpring.spring = flipperForce;
+        jointSpring.damper = 0f;
+        jointSpring.targetPosition = flipperRestPosition;
+        hingeJoint.spring = jointSpring;
+    }
+
 }
