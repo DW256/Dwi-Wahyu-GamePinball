@@ -745,6 +745,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bumper
       objectReference: {fileID: 0}
+    - target: {fileID: 2240353096680712497, guid: 48beed42ac5b3e64d972efe05bf6b074, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2240353096680712509, guid: 48beed42ac5b3e64d972efe05bf6b074, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -856,6 +860,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bumper
       objectReference: {fileID: 0}
+    - target: {fileID: 2240353096680712497, guid: 48beed42ac5b3e64d972efe05bf6b074, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2240353096680712509, guid: 48beed42ac5b3e64d972efe05bf6b074, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -921,6 +929,10 @@ PrefabInstance:
     - target: {fileID: 2240353096680712497, guid: 48beed42ac5b3e64d972efe05bf6b074, type: 3}
       propertyPath: m_Name
       value: Bumper
+      objectReference: {fileID: 0}
+    - target: {fileID: 2240353096680712497, guid: 48beed42ac5b3e64d972efe05bf6b074, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2240353096680712509, guid: 48beed42ac5b3e64d972efe05bf6b074, type: 3}
       propertyPath: m_RootOrder
@@ -1151,6 +1163,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bumper
       objectReference: {fileID: 0}
+    - target: {fileID: 2240353096680712497, guid: 48beed42ac5b3e64d972efe05bf6b074, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2240353096680712509, guid: 48beed42ac5b3e64d972efe05bf6b074, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1216,6 +1232,10 @@ PrefabInstance:
     - target: {fileID: 2240353096680712497, guid: 48beed42ac5b3e64d972efe05bf6b074, type: 3}
       propertyPath: m_Name
       value: Bumper
+      objectReference: {fileID: 0}
+    - target: {fileID: 2240353096680712497, guid: 48beed42ac5b3e64d972efe05bf6b074, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2240353096680712509, guid: 48beed42ac5b3e64d972efe05bf6b074, type: 3}
       propertyPath: m_RootOrder
@@ -1476,6 +1496,10 @@ PrefabInstance:
     - target: {fileID: 2240353096680712497, guid: 48beed42ac5b3e64d972efe05bf6b074, type: 3}
       propertyPath: m_Name
       value: Bumper
+      objectReference: {fileID: 0}
+    - target: {fileID: 2240353096680712497, guid: 48beed42ac5b3e64d972efe05bf6b074, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2240353096680712509, guid: 48beed42ac5b3e64d972efe05bf6b074, type: 3}
       propertyPath: m_RootOrder
@@ -1993,7 +2017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2240353096680712509, guid: 48beed42ac5b3e64d972efe05bf6b074, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.25
+      value: 1.11
       objectReference: {fileID: 0}
     - target: {fileID: 2240353096680712509, guid: 48beed42ac5b3e64d972efe05bf6b074, type: 3}
       propertyPath: m_LocalRotation.w
