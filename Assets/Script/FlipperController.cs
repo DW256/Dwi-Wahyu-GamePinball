@@ -9,12 +9,12 @@ public class FlipperController : MonoBehaviour
     public float flipperRestPosition = 0f;
     public float flipperPressedPosition = 45f;
 
-    private HingeJoint hingeJoint;
+    private HingeJoint hj;
 
     private void Start()
     {
-        hingeJoint = GetComponent<HingeJoint>();
-        hingeJoint.useSpring = true;
+        hj = GetComponent<HingeJoint>();
+        hj.useSpring = true;
     }
 
     private void Update()
@@ -35,7 +35,7 @@ public class FlipperController : MonoBehaviour
         jointSpring.spring = flipperForce;
         jointSpring.damper = 0f;
         jointSpring.targetPosition = flipperPressedPosition;
-        hingeJoint.spring = jointSpring;
+        hj.spring = jointSpring;
     }
 
     private void ResetFlipperPosition()
@@ -44,7 +44,7 @@ public class FlipperController : MonoBehaviour
         jointSpring.spring = flipperForce;
         jointSpring.damper = 0f;
         jointSpring.targetPosition = flipperRestPosition;
-        hingeJoint.spring = jointSpring;
+        hj.spring = jointSpring;
     }
 
 }
