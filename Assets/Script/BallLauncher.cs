@@ -10,19 +10,44 @@ public class BallLauncher : MonoBehaviour
     public float minYScale = 0.5f; // Skala minimum pada sumbu Y
     public float maxYScale = 1f; // Skala maksimum pada sumbu Y
 
+    public Collider ball;
+    public Transform pivot;
+
     private bool isLaunching = false;
     private float holdDuration = 0f;
-    public Rigidbody ballRigidbody;
+    private Rigidbody ballRigidbody;
     private Vector3 initialScale;
+
+    private bool isActive = false;
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        //if (collision.collider != ball) return;
+
+        isActive = true;
+
+        //Debug.Log("Enter");
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        //if (collision.collider != ball) return;
+
+        isActive = false;
+
+        //Debug.Log("Exit");
+    }
 
     private void Start()
     {
-       
-        initialScale = transform.localScale;
+        ballRigidbody = ball.attachedRigidbody;
+        initialScale = pivot.localScale;
     }
 
     private void Update()
     {
+        if (!isActive) return;
+
         if (Input.GetKeyDown(KeyCode.Space) && !isLaunching)
         {
             isLaunching = true;
@@ -47,19 +72,19 @@ public class BallLauncher : MonoBehaviour
     private void ScaleLauncher()
     {
         float scale = Mathf.Lerp(minYScale, maxYScale, holdDuration / maxHoldDuration);
-        Vector3 newScale = new Vector3(transform.localScale.x, scale, transform.localScale.z);
-        transform.localScale = newScale;
+        Vector3 newScale = new Vector3(pivot.localScale.x, scale, pivot.localScale.z);
+        pivot.localScale = newScale;
     }
 
     private void ResetLauncherScale()
     {
-        transform.localScale = initialScale;
+        pivot.localScale = initialScale;
     }
 
     private void LaunchBall()
     {
         float force = Mathf.Lerp(minForce, maxForce, holdDuration / maxHoldDuration);
-        Vector3 launchDirection = transform.up;
+        Vector3 launchDirection = pivot.up;
         ballRigidbody.AddForce(launchDirection * force);
     }
 }
