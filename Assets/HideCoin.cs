@@ -6,7 +6,6 @@ using UnityEngine;
 public class HideCoin : MonoBehaviour
 {
     public CoinSpawner spawner;
-    public float lifetime = 10f;
 
     private void OnTriggerEnter(Collider collision)
     {
@@ -27,7 +26,7 @@ public class HideCoin : MonoBehaviour
     private IEnumerator AutoDespawn()
     {
         //Debug.Log(gameObject.name + " Start : " + Time.time);
-        yield return new WaitForSeconds(lifetime);
+        yield return new WaitForSeconds(spawner.inactiveDuration);
         //Debug.Log(gameObject.name + " End : " + Time.time);
         spawner.Despawn(gameObject);
     }

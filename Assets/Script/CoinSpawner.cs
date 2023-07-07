@@ -6,9 +6,9 @@ public class CoinSpawner : MonoBehaviour
 {
     public int maxCoin = 3;
     public float spawnInterval = 3f;
+    public float inactiveDuration = 10f;
     public Transform spawnPoint;
 
-    private float duration;
     public List<GameObject> coins; //pool
     [SerializeField] private List<GameObject> coinsActive;
 
