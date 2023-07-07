@@ -114,7 +114,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ballCollider: {fileID: 0}
   multiplier: 2
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color:
+  - {r: 0, g: 0, b: 0, a: 0.00000021065426}
+  - {r: 1, g: 0, b: 0, a: 0.0000027596964}
+  - {r: 0, g: 1, b: 0, a: 4.44e-43}
+  colorIndex: 0
 --- !u!95 &766635876384287285
 Animator:
   serializedVersion: 5
@@ -123,7 +127,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2240353096680712497}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 0cf0dc353bfcd054280c985cf05d2308, type: 2}
   m_CullingMode: 0
