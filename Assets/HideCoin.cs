@@ -19,14 +19,16 @@ public class HideCoin : MonoBehaviour
         }
     }
 
-    private void Start()
+    private void OnEnable()
     {
         StartCoroutine(AutoDespawn());
     }
 
     private IEnumerator AutoDespawn()
     {
+        //Debug.Log(gameObject.name + " Start : " + Time.time);
         yield return new WaitForSeconds(lifetime);
+        //Debug.Log(gameObject.name + " End : " + Time.time);
         spawner.Despawn(gameObject);
     }
 
