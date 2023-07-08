@@ -5864,6 +5864,10 @@ PrefabInstance:
       value: Ball
       objectReference: {fileID: 0}
     - target: {fileID: 7597586075638451732, guid: 4007e835be5dfdf43aaf0f0cdfc6b07f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597586075638451732, guid: 4007e835be5dfdf43aaf0f0cdfc6b07f, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -5946,7 +5950,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8649985351767978229, guid: 6864d8e6a2956ff42996c86a9f89a2f0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.715
+      value: -0.741
       objectReference: {fileID: 0}
     - target: {fileID: 8649985351767978229, guid: 6864d8e6a2956ff42996c86a9f89a2f0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5954,7 +5958,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8649985351767978229, guid: 6864d8e6a2956ff42996c86a9f89a2f0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.38999987
+      value: -0.417
       objectReference: {fileID: 0}
     - target: {fileID: 8649985351767978229, guid: 6864d8e6a2956ff42996c86a9f89a2f0, type: 3}
       propertyPath: m_LocalRotation.w
