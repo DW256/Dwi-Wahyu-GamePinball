@@ -2,23 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CoinSpawner : MonoBehaviour
+public class TrapSpawner : MonoBehaviour
 {
-    public int maxCoin = 3;
+    public int maxTrap = 3;
     public float spawnInterval = 3f;
     public float inactiveDuration = 10f;
     public Transform spawnPoint;
 
-    public List<GameObject> coins; //pool
+    public List<GameObject> traps; //pool
     [SerializeField] private List<GameObject> coinsActive;
 
 
     private void Awake()
     {
         //Make sure all coins are deactivated
-        for (int i = 0; i < coins.Count; i++)
+        for (int i = 0; i < traps.Count; i++)
         {
-            coins[i].SetActive(false);
+            traps[i].SetActive(false);
         }
     }
 
@@ -26,7 +26,7 @@ public class CoinSpawner : MonoBehaviour
     {
         coinsActive.Remove(obj);
         obj.SetActive(false);
-        coins.Add(obj);
+        traps.Add(obj);
 
         //respawn
         StartCoroutine(Respawn());
@@ -34,14 +34,14 @@ public class CoinSpawner : MonoBehaviour
 
     private void Spawn()
     {
-        if (coinsActive.Count >= maxCoin) return;
+        if (coinsActive.Count >= maxTrap) return;
 
         //Random coin dari list
-        int rand = Random.Range(0, coins.Count);
+        int rand = Random.Range(0, traps.Count);
 
-        coins[rand].SetActive(true);
-        coinsActive.Add(coins[rand]);
-        coins.Remove(coins[rand]);
+        traps[rand].SetActive(true);
+        coinsActive.Add(traps[rand]);
+        traps.Remove(traps[rand]);
 
     }
 
@@ -52,7 +52,7 @@ public class CoinSpawner : MonoBehaviour
 
     private IEnumerator StartSpawn()
     {
-        for (int i = 0; i < maxCoin; i++)
+        for (int i = 0; i < maxTrap; i++)
         {
             yield return new WaitForSeconds(spawnInterval);
             Spawn();
@@ -64,5 +64,4 @@ public class CoinSpawner : MonoBehaviour
         yield return new WaitForSeconds(spawnInterval);
         Spawn();
     }
-
 }

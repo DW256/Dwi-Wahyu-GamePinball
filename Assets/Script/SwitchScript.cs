@@ -6,12 +6,12 @@ public class SwitchScript : MonoBehaviour
 {
     public Color hitColor;
     private Color originalColor;
-    private Renderer renderer;
+    private Renderer ren;
 
     private void Start()
     {
-        renderer = GetComponent<Renderer>();
-        originalColor = renderer.material.color;
+        ren = GetComponent<Renderer>();
+        originalColor = ren.material.color;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -20,13 +20,13 @@ public class SwitchScript : MonoBehaviour
         {
             
 
-            if(renderer.material.color.Equals(originalColor))
+            if(ren.material.color.Equals(originalColor))
             {
-                renderer.material.color = hitColor;
+                ren.material.color = hitColor;
             }
             else
             {
-                renderer.material.color = hitColor;
+                ren.material.color = hitColor;
             }
            
         }
@@ -36,7 +36,7 @@ public class SwitchScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
-            renderer.material.color = hitColor;
+            ren.material.color = hitColor;
         }
     }
 
