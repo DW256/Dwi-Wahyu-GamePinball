@@ -9,9 +9,22 @@ public class HeartDisplay : MonoBehaviour
     public int index; // Parameter index
 
     [SerializeField] private ScoringController scoring;
+
+    private void Awake()
+    {
+        for (int i = 0; i < imageArray.Length; i++)
+        {
+            imageArray[i].gameObject.SetActive(false);
+        }
+    }
     private void Start()
     {
         index = scoring.currentLives;
+        
+    }
+
+    private void FixedUpdate()
+    {
         DisplayLifeImages(index);
     }
 
@@ -19,7 +32,8 @@ public class HeartDisplay : MonoBehaviour
     {
         for (int i = 0; i < imageArray.Length; i++)
         {
-            if (i < currentLife)
+
+            if (i <= currentLife)
             {
                 imageArray[i].gameObject.SetActive(true); // Aktifkan gambar nyawa
             }
