@@ -8,6 +8,9 @@ public class TrapTrigger : MonoBehaviour
     public TrapSpawner spawner;
     Vector3 ballPosition;
 
+    [SerializeField] private ScoringController scoring;
+
+
     private void Awake()
     {
         GameObject ball = GameObject.FindGameObjectWithTag("Ball");
@@ -20,6 +23,8 @@ public class TrapTrigger : MonoBehaviour
         {
             collision.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
             collision.gameObject.transform.position = ballPosition;
+
+            scoring.ReduceLives();
 
             //gameObject.SetActive(false);
             spawner.Despawn(gameObject);

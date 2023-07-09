@@ -7,6 +7,8 @@ public class BallReturn : MonoBehaviour
     // Start is called before the first frame update
 
     Vector3 initialPosition;
+
+    [SerializeField] private ScoringController scoring;
     void Start()
     {
         GameObject BallTransform = GameObject.FindGameObjectWithTag("Ball");
@@ -25,6 +27,7 @@ public class BallReturn : MonoBehaviour
         if (other.gameObject.tag.Equals("Ball"))
         {
             other.gameObject.transform.position = initialPosition;
+            scoring.ReduceLives();
         }
     }
 }

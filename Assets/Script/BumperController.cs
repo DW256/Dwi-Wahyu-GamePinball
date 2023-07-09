@@ -13,6 +13,10 @@ public class BumperController : MonoBehaviour
     private Renderer r;
     private Animator animator;
 
+    [SerializeField] private ScoringController scoring;
+
+    public int point;
+
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -32,6 +36,9 @@ public class BumperController : MonoBehaviour
 
         colorIndex = colorIndex + 1 < color.Length ? colorIndex + 1 : 0;
         r.material.color = color[colorIndex];
+
+
+        scoring.AddScore(point);
     }
 
 }
