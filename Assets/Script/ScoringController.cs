@@ -51,6 +51,7 @@ public class ScoringController : MonoBehaviour
 
     public void ReduceLives()
     {
+        //Debug.Log("Live Reduced");
         currentLives--; // Mengurangi nyawa
         UpdateLivesText(); // Update tampilan nyawa
 

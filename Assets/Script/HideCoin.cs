@@ -6,13 +6,15 @@ using UnityEngine;
 public class HideCoin : MonoBehaviour
 {
     public CoinSpawner spawner;
+    [SerializeField] private ScoringController scoring;
 
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
-            // Setelah bola bertabrakan dengan coin, nonaktifkan coin
+            scoring.AddScore(spawner.coinPoint);
 
+            // Setelah bola bertabrakan dengan coin, nonaktifkan coin
             //gameObject.SetActive(false);
             spawner.Despawn(gameObject);
         }

@@ -403,6 +403,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 290635674}
     m_Modifications:
     - target: {fileID: 2824298032085169112, guid: 0c1351c88b5ce244c8f14c2a88d77aba, type: 3}
+      propertyPath: scoring
+      value: 
+      objectReference: {fileID: 1667572235}
+    - target: {fileID: 2824298032085169112, guid: 0c1351c88b5ce244c8f14c2a88d77aba, type: 3}
       propertyPath: spawner
       value: 
       objectReference: {fileID: 290635673}
@@ -809,6 +813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxCoin: 3
+  coinPoint: 100
   spawnInterval: 3
   inactiveDuration: 10
   spawnPoint: {fileID: 290635674}
@@ -1430,6 +1435,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 290635674}
     m_Modifications:
     - target: {fileID: 2824298032085169112, guid: 0c1351c88b5ce244c8f14c2a88d77aba, type: 3}
+      propertyPath: scoring
+      value: 
+      objectReference: {fileID: 1667572235}
+    - target: {fileID: 2824298032085169112, guid: 0c1351c88b5ce244c8f14c2a88d77aba, type: 3}
       propertyPath: spawner
       value: 
       objectReference: {fileID: 290635673}
@@ -1867,6 +1876,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 290635674}
     m_Modifications:
     - target: {fileID: 2824298032085169112, guid: 0c1351c88b5ce244c8f14c2a88d77aba, type: 3}
+      propertyPath: scoring
+      value: 
+      objectReference: {fileID: 1667572235}
+    - target: {fileID: 2824298032085169112, guid: 0c1351c88b5ce244c8f14c2a88d77aba, type: 3}
       propertyPath: spawner
       value: 
       objectReference: {fileID: 290635673}
@@ -2289,6 +2302,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 290635674}
     m_Modifications:
     - target: {fileID: 2824298032085169112, guid: 0c1351c88b5ce244c8f14c2a88d77aba, type: 3}
+      propertyPath: scoring
+      value: 
+      objectReference: {fileID: 1667572235}
+    - target: {fileID: 2824298032085169112, guid: 0c1351c88b5ce244c8f14c2a88d77aba, type: 3}
       propertyPath: spawner
       value: 
       objectReference: {fileID: 290635673}
@@ -2680,6 +2697,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 290635674}
     m_Modifications:
     - target: {fileID: 2824298032085169112, guid: 0c1351c88b5ce244c8f14c2a88d77aba, type: 3}
+      propertyPath: scoring
+      value: 
+      objectReference: {fileID: 1667572235}
+    - target: {fileID: 2824298032085169112, guid: 0c1351c88b5ce244c8f14c2a88d77aba, type: 3}
       propertyPath: spawner
       value: 
       objectReference: {fileID: 290635673}
@@ -3028,6 +3049,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 290635674}
     m_Modifications:
     - target: {fileID: 2824298032085169112, guid: 0c1351c88b5ce244c8f14c2a88d77aba, type: 3}
+      propertyPath: scoring
+      value: 
+      objectReference: {fileID: 1667572235}
+    - target: {fileID: 2824298032085169112, guid: 0c1351c88b5ce244c8f14c2a88d77aba, type: 3}
       propertyPath: spawner
       value: 
       objectReference: {fileID: 290635673}
@@ -3201,6 +3226,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 290635674}
     m_Modifications:
+    - target: {fileID: 2824298032085169112, guid: 0c1351c88b5ce244c8f14c2a88d77aba, type: 3}
+      propertyPath: scoring
+      value: 
+      objectReference: {fileID: 1667572235}
     - target: {fileID: 2824298032085169112, guid: 0c1351c88b5ce244c8f14c2a88d77aba, type: 3}
       propertyPath: spawner
       value: 
@@ -4122,6 +4151,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 290635674}
     m_Modifications:
     - target: {fileID: 2824298032085169112, guid: 0c1351c88b5ce244c8f14c2a88d77aba, type: 3}
+      propertyPath: scoring
+      value: 
+      objectReference: {fileID: 1667572235}
+    - target: {fileID: 2824298032085169112, guid: 0c1351c88b5ce244c8f14c2a88d77aba, type: 3}
       propertyPath: spawner
       value: 
       objectReference: {fileID: 290635673}
@@ -4297,6 +4330,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 290635674}
     m_Modifications:
+    - target: {fileID: 2824298032085169112, guid: 0c1351c88b5ce244c8f14c2a88d77aba, type: 3}
+      propertyPath: scoring
+      value: 
+      objectReference: {fileID: 1667572235}
     - target: {fileID: 2824298032085169112, guid: 0c1351c88b5ce244c8f14c2a88d77aba, type: 3}
       propertyPath: spawner
       value: 
@@ -5241,6 +5278,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 290635674}
     m_Modifications:
+    - target: {fileID: 2824298032085169112, guid: 0c1351c88b5ce244c8f14c2a88d77aba, type: 3}
+      propertyPath: scoring
+      value: 
+      objectReference: {fileID: 1667572235}
     - target: {fileID: 2824298032085169112, guid: 0c1351c88b5ce244c8f14c2a88d77aba, type: 3}
       propertyPath: spawner
       value: 
@@ -6456,6 +6497,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 290635674}
     m_Modifications:
     - target: {fileID: 2824298032085169112, guid: 0c1351c88b5ce244c8f14c2a88d77aba, type: 3}
+      propertyPath: scoring
+      value: 
+      objectReference: {fileID: 1667572235}
+    - target: {fileID: 2824298032085169112, guid: 0c1351c88b5ce244c8f14c2a88d77aba, type: 3}
       propertyPath: spawner
       value: 
       objectReference: {fileID: 290635673}
@@ -6532,6 +6577,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 290635674}
     m_Modifications:
+    - target: {fileID: 2824298032085169112, guid: 0c1351c88b5ce244c8f14c2a88d77aba, type: 3}
+      propertyPath: scoring
+      value: 
+      objectReference: {fileID: 1667572235}
     - target: {fileID: 2824298032085169112, guid: 0c1351c88b5ce244c8f14c2a88d77aba, type: 3}
       propertyPath: spawner
       value: 

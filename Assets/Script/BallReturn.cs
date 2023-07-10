@@ -26,8 +26,8 @@ public class BallReturn : MonoBehaviour
     {
         if (other.gameObject.tag.Equals("Ball"))
         {
-            other.gameObject.transform.position = initialPosition;
             scoring.ReduceLives();
+            other.gameObject.transform.position = initialPosition;
         }
     }
 }

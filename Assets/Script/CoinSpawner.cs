@@ -5,6 +5,7 @@ using UnityEngine;
 public class CoinSpawner : MonoBehaviour
 {
     public int maxCoin = 3;
+    public int coinPoint = 100;
     public float spawnInterval = 3f;
     public float inactiveDuration = 10f;
     public Transform spawnPoint;
