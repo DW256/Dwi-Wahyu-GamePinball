@@ -14,13 +14,12 @@ public class ScoringController : MonoBehaviour
     public int currentLives; // Nyawa saat ini
     public int currentScore; // Skor saat ini
 
+    public int totalScore;
+ 
 
-    private void Awake()
-    {
-        currentLives = maxLives; // Set nyawa awal
-    }
     private void Start()
     {
+        currentLives = maxLives; // Set nyawa awal
         scoreArray = new int[maxLives]; // Inisialisasi array skor
        
         currentScore = 0; // Set skor awal
@@ -63,7 +62,7 @@ public class ScoringController : MonoBehaviour
 
     private void CalculateTotalScore()
     {
-        int totalScore = 0;
+       
 
         for (int i = 0; i < scoreArray.Length; i++)
         {

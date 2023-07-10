@@ -2801,12 +2801,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3c4131c7016d24197c933224aedea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoring: {fileID: 1667572235}
   imageArray:
   - {fileID: 435647999}
   - {fileID: 1675779546}
   - {fileID: 557049061}
-  index: 0
-  scoring: {fileID: 1667572235}
+  startIndex: 0
+  displayCount: 3
 --- !u!1001 &1027635275
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5030,6 +5031,7 @@ MonoBehaviour:
   scoreArray: 
   currentLives: 0
   currentScore: 0
+  totalScore: 0
 --- !u!4 &1667572236
 Transform:
   m_ObjectHideFlags: 0
