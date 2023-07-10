@@ -11,6 +11,9 @@ public class FlipperController : MonoBehaviour
 
     private HingeJoint hj;
 
+    private bool isHit = false;
+
+    [SerializeField] private AudioSource audioSource;
     private void Start()
     {
         hj = GetComponent<HingeJoint>();
@@ -22,6 +25,13 @@ public class FlipperController : MonoBehaviour
         if (Input.GetKey(flipperKey))
         {
             ApplyFlipperForce();
+
+
+            if(isHit == true)
+            {
+                audioSource.time = 0.5f;
+                audioSource.Play();
+            }
         }
         else
         {
@@ -45,6 +55,24 @@ public class FlipperController : MonoBehaviour
         jointSpring.damper = 0f;
         jointSpring.targetPosition = flipperRestPosition;
         hj.spring = jointSpring;
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Ball"))
+        {
+            isHit = true;
+           
+        }
+    }
+
+    private void OnCollisionExit(Collision other)
+    {
+        if (other.gameObject.CompareTag("Ball"))
+        {
+            isHit = false;
+
+        }
     }
 
 }

@@ -13,6 +13,8 @@ public class HeartDisplay : MonoBehaviour
 
     private int endIndex;
 
+    
+
     public void Update()
     {
 
@@ -30,4 +32,6 @@ public class HeartDisplay : MonoBehaviour
             }
         }
     }
+
+    
 }

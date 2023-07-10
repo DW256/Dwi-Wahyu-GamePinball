@@ -17,6 +17,8 @@ public class BumperController : MonoBehaviour
 
     public int point;
 
+    private AudioSource audioSource;
+
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -24,6 +26,7 @@ public class BumperController : MonoBehaviour
 
         r.material.color = color[colorIndex]; //set default color
         //r.material.SetColor("_Color", color[colorIndex]);
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -39,6 +42,10 @@ public class BumperController : MonoBehaviour
 
 
         scoring.AddScore(point);
+
+        audioSource.PlayOneShot(audioSource.clip);
     }
+
+
 
 }

@@ -20,11 +20,20 @@ public class BallLauncher : MonoBehaviour
 
     private bool isActive = false;
 
+    private AudioSource audioSource;
+    public AudioClip[] audioClips;
+
     private void OnCollisionEnter(Collision collision)
     {
         //if (collision.collider != ball) return;
 
         isActive = true;
+
+        if (collision.gameObject.CompareTag("Ball"))
+        {
+            collision.gameObject.GetComponent<AudioSource>().Stop();
+
+        }
 
         //Debug.Log("Enter");
     }
@@ -42,6 +51,8 @@ public class BallLauncher : MonoBehaviour
     {
         ballRigidbody = ball.attachedRigidbody;
         initialScale = pivot.localScale;
+        audioSource = GetComponent<AudioSource>();
+
     }
 
     private void Update()
@@ -52,6 +63,7 @@ public class BallLauncher : MonoBehaviour
         {
             isLaunching = true;
             holdDuration = 0f;
+
         }
 
         if (Input.GetKey(KeyCode.Space) && isLaunching)
@@ -66,6 +78,8 @@ public class BallLauncher : MonoBehaviour
             LaunchBall();
             isLaunching = false;
             ResetLauncherScale();
+            audioSource.clip = audioClips[0];
+            audioSource.Play();
         }
     }
 
@@ -87,4 +101,6 @@ public class BallLauncher : MonoBehaviour
         Vector3 launchDirection = pivot.up;
         ballRigidbody.AddForce(launchDirection * force);
     }
+
+
 }
