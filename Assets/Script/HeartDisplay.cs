@@ -16,7 +16,7 @@ public class HeartDisplay : MonoBehaviour
     public void Update()
     {
 
-        endIndex = scoring.currentLives;
+        endIndex = scoring.currentLives - 1;
 
         for (int i = 0; i < imageArray.Length; i++)
         {
