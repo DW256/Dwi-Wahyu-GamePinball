@@ -6899,6 +6899,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 290635674}
     m_Modifications:
+    - target: {fileID: 1529600100078939922, guid: 0c1351c88b5ce244c8f14c2a88d77aba, type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2824298032085169112, guid: 0c1351c88b5ce244c8f14c2a88d77aba, type: 3}
       propertyPath: scoring
       value: 

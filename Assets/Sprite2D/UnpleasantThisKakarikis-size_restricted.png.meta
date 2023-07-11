@@ -1,0 +1,607 @@
+fileFormatVersion: 2
+guid: 814d780324a1d2d42ab315645917b3a6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UnpleasantThisKakarikis-size_restricted_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2998
+        width: 1896
+        height: 1322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2d3d473ea43ded408d84f4af7c65797
+      internalID: 996853078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnpleasantThisKakarikis-size_restricted_1
+      rect:
+        serializedVersion: 2
+        x: 1911
+        y: 3099
+        width: 1906
+        height: 1170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9d166dc81527f429e073ff0d016638
+      internalID: -1791484074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnpleasantThisKakarikis-size_restricted_2
+      rect:
+        serializedVersion: 2
+        x: 3860
+        y: 3142
+        width: 1849
+        height: 1178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d6340954109ff2488999c33af0d5dc1
+      internalID: 71325689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnpleasantThisKakarikis-size_restricted_3
+      rect:
+        serializedVersion: 2
+        x: 5752
+        y: 3171
+        width: 1936
+        height: 1149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df0ecc9fa9b0914caff1dfd0b350494
+      internalID: -1066615879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnpleasantThisKakarikis-size_restricted_4
+      rect:
+        serializedVersion: 2
+        x: 7673
+        y: 3214
+        width: 1935
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee12c4c6ecfa6614297412b655947ec6
+      internalID: 1771178295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnpleasantThisKakarikis-size_restricted_5
+      rect:
+        serializedVersion: 2
+        x: 9580
+        y: 3229
+        width: 1935
+        height: 1091
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac0669c5eee02c542b64aaacaa198a6b
+      internalID: 508067100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnpleasantThisKakarikis-size_restricted_6
+      rect:
+        serializedVersion: 2
+        x: 11529
+        y: 3214
+        width: 1892
+        height: 1106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be51f14e428de04fb32556a033e2329
+      internalID: -1288636023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnpleasantThisKakarikis-size_restricted_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2073
+        width: 1925
+        height: 910
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1df403cb40e0b48b668ea34afae107
+      internalID: 1842327553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnpleasantThisKakarikis-size_restricted_8
+      rect:
+        serializedVersion: 2
+        x: 1882
+        y: 2160
+        width: 1978
+        height: 867
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8df7d9e92a8aa4d85112d19e611320
+      internalID: -1347408191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnpleasantThisKakarikis-size_restricted_9
+      rect:
+        serializedVersion: 2
+        x: 3860
+        y: 2160
+        width: 1892
+        height: 910
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f0ff5633d2a76b4f897ee2db3ef044a
+      internalID: -514876406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnpleasantThisKakarikis-size_restricted_10
+      rect:
+        serializedVersion: 2
+        x: 5752
+        y: 2189
+        width: 1921
+        height: 910
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea4b732bb78742448a6f03f75429013
+      internalID: 587266825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnpleasantThisKakarikis-size_restricted_11
+      rect:
+        serializedVersion: 2
+        x: 7688
+        y: 2146
+        width: 1920
+        height: 866
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1057c8948154a6043b9d9e2e7cc693f6
+      internalID: -1178597635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnpleasantThisKakarikis-size_restricted_12
+      rect:
+        serializedVersion: 2
+        x: 9580
+        y: 2102
+        width: 1949
+        height: 896
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd8801c543e8cf43ab627bd5f5a4c2a
+      internalID: 237894041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnpleasantThisKakarikis-size_restricted_13
+      rect:
+        serializedVersion: 2
+        x: 11486
+        y: 2102
+        width: 1954
+        height: 852
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aeef6e0c3633f64c8b4d5bfe74c298c
+      internalID: 1524758544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnpleasantThisKakarikis-size_restricted_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1120
+        width: 1911
+        height: 910
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68edecd9fcfcee4c929ab8f91571dbe
+      internalID: 1677765930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnpleasantThisKakarikis-size_restricted_15
+      rect:
+        serializedVersion: 2
+        x: 1882
+        y: 1120
+        width: 1950
+        height: 867
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c107e700c195399428275bc042d9d780
+      internalID: -541531218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnpleasantThisKakarikis-size_restricted_16
+      rect:
+        serializedVersion: 2
+        x: 3803
+        y: 1163
+        width: 1964
+        height: 780
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb9f09f8ff5f25047a3a844f865d3c6b
+      internalID: 603137874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnpleasantThisKakarikis-size_restricted_17
+      rect:
+        serializedVersion: 2
+        x: 5762
+        y: 1093
+        width: 1906
+        height: 856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5374fdb827586ed4a884f92d1bae5d31
+      internalID: -1699115336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnpleasantThisKakarikis-size_restricted_18
+      rect:
+        serializedVersion: 2
+        x: 7683
+        y: 1115
+        width: 1906
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6479ce2149e414846828c86dc777cf7e
+      internalID: -1457955656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnpleasantThisKakarikis-size_restricted_19
+      rect:
+        serializedVersion: 2
+        x: 9608
+        y: 1094
+        width: 1906
+        height: 838
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab916880de8f2c147bab5459a4e43cad
+      internalID: -1210169698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnpleasantThisKakarikis-size_restricted_20
+      rect:
+        serializedVersion: 2
+        x: 11528
+        y: 1123
+        width: 1878
+        height: 794
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f312fa68523551749993c17d61bcbf93
+      internalID: -199358003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnpleasantThisKakarikis-size_restricted_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 1895
+        height: 1025
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b807490551427994e98a4e975247c3ca
+      internalID: -1339876615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3a9f8124856595542a0d50d30f1a163d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      UnpleasantThisKakarikis-size_restricted_0: 996853078
+      UnpleasantThisKakarikis-size_restricted_6: -368545408
+      UnpleasantThisKakarikis-size_restricted_11: -514876406
+      UnpleasantThisKakarikis-size_restricted_9: 1842327553
+      UnpleasantThisKakarikis-size_restricted_13: -1178597635
+      UnpleasantThisKakarikis-size_restricted_5: 508067100
+      UnpleasantThisKakarikis-size_restricted_3: -1066615879
+      UnpleasantThisKakarikis-size_restricted_20: -1457955656
+      UnpleasantThisKakarikis-size_restricted_4: 1771178295
+      UnpleasantThisKakarikis-size_restricted_7: -611910691
+      UnpleasantThisKakarikis-size_restricted_19: -1699115336
+      UnpleasantThisKakarikis-size_restricted_1: -1791484074
+      UnpleasantThisKakarikis-size_restricted_17: -541531218
+      UnpleasantThisKakarikis-size_restricted_12: 587266825
+      UnpleasantThisKakarikis-size_restricted_10: -1347408191
+      UnpleasantThisKakarikis-size_restricted_15: 1524758544
+      UnpleasantThisKakarikis-size_restricted_14: 237894041
+      UnpleasantThisKakarikis-size_restricted_16: 1677765930
+      UnpleasantThisKakarikis-size_restricted_21: -1210169698
+      UnpleasantThisKakarikis-size_restricted_18: 603137874
+      UnpleasantThisKakarikis-size_restricted_8: -1288636023
+      UnpleasantThisKakarikis-size_restricted_2: 71325689
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

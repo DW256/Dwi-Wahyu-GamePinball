@@ -12,6 +12,7 @@ public class HideCoin : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
+            
             scoring.AddScore(spawner.coinPoint);
 
             // Setelah bola bertabrakan dengan coin, nonaktifkan coin

@@ -15,4 +15,14 @@ public class InteractButton : MonoBehaviour
 
         Time.timeScale = 1;
     }
+
+    public void LoadScene(string SceneName)
+    {
+        SceneManager.LoadScene(SceneName);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
