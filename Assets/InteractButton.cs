@@ -7,6 +7,12 @@ public class InteractButton : MonoBehaviour
 {
     public void retryStage()
     {
-        SceneManager.LoadScene("pinball");
+        // Mengambil nama scene saat ini
+        string currentSceneName = SceneManager.GetActiveScene().name;
+
+        // Memuat ulang scene saat ini
+        SceneManager.LoadScene(currentSceneName);
+
+        Time.timeScale = 1;
     }
 }

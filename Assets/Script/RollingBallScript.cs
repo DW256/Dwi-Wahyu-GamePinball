@@ -37,5 +37,14 @@ public class RollingBallScript : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("BallReturner"))
+        {
+            audioSource.Stop();
+            isRolling = false;
+        }
+    }
+
 
 }
