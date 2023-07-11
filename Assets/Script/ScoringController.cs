@@ -19,7 +19,8 @@ public class ScoringController : MonoBehaviour
     public int currentScore; // Skor saat ini
 
     public int totalScore;
- 
+
+    public GameObject ball;
 
     private void Start()
     {
@@ -90,5 +91,8 @@ public class ScoringController : MonoBehaviour
         hudPanel.gameObject.SetActive(false);
         gameOverPanel.gameObject.SetActive(true);
         Time.timeScale = 0f; //STop Time
+
+        ball.GetComponent<Rigidbody>().useGravity = false;
+        ball.GetComponent<AudioSource>().Stop();
     }
 }
