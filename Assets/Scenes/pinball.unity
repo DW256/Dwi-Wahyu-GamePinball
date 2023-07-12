@@ -825,8 +825,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreTexts: {fileID: 6846421385204313960, guid: d42d68df44bc85b43a7f2ff8ddbfad31, type: 3}
-  scoring: {fileID: 1667572235}
-  prefabParent: {fileID: 148320951}
+  savedScores: 
 --- !u!4 &142024553
 Transform:
   m_ObjectHideFlags: 0
@@ -7287,7 +7286,7 @@ MonoBehaviour:
   currentScore: 0
   totalScore: 0
   ball: {fileID: 665988256}
-  scoreList: {fileID: 142024552}
+  scoreListRenderer: {fileID: 2106074668}
 --- !u!4 &1667572236
 Transform:
   m_ObjectHideFlags: 0
@@ -9626,6 +9625,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2106074667}
+  - component: {fileID: 2106074668}
   m_Layer: 5
   m_Name: List Record
   m_TagString: Untagged
@@ -9656,6 +9656,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2106074668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106074666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667defbd8da911c4aa4da77e5b276ce8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreTexts: {fileID: 6846421385204313960, guid: d42d68df44bc85b43a7f2ff8ddbfad31, type: 3}
+  prefabParent: {fileID: 148320951}
 --- !u!1 &2115526368 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5237406692449922263, guid: 0c1351c88b5ce244c8f14c2a88d77aba, type: 3}
