@@ -11,47 +11,71 @@ public class ScoreListManager : MonoBehaviour
     private int[] Listedscores;
     private int[] savedScores;
 
-    private int index;
+    private int index = 0;
 
-    [SerializeField] private ScoringController scoring;
-
+    public GameObject scoring;
     public Transform prefabParent;
 
+
+    private void Awake()
+    {
+        
+    }
     public void AddListScore()
     {
-        savedScores[index] = scoring.totalScore;
-        index++;
-    }
-
-
-    void FixedUpdate()
-    {
-
-        // Assign data dari array int lainnya ke array scores
-        Listedscores = new int[savedScores.Length];
-        for (int i = 0; i < savedScores.Length; i++)
+        if(scoring != null)
         {
-            Listedscores[i] = savedScores[i];
-        }
+            for (int i = 0; i < savedScores.Length; i++)
+            {
+                if (i == index)
+                {
+                    savedScores[index] = scoring.GetComponent<ScoringController>().totalScore;
+                    index++;
+                    ListingScores();
+                }
 
-        SortAndDisplayScores();
+            }
+
+        }
+        
+       
     }
 
-    void SortAndDisplayScores()
+
+    private void ListingScores()
     {
+
+        int index= 0;
+
         // Membuat instance prefab scoreItemPrefab sebagai item skor baru
         GameObject scoreItem = Instantiate(scoreTexts, prefabParent);
 
+        // Assign data dari array int lainnya ke array scores
+        Listedscores = new int[savedScores.Length];
+
         // Mengatur nilai text pada item skor
         TextMeshProUGUI scoreText = scoreItem.GetComponent<TextMeshProUGUI>();
-        scoreText.text = Listedscores.ToString();
+
+        for (int i = 0; i < savedScores.Length; i++)
+        {
+            if(i == index)
+            {
+                Listedscores[index] = savedScores[index];
+                scoreText.SetText(Listedscores[index].ToString());
+                index++;
+            }
+            
+        }
+
 
         // Mengatur posisi dan ukuran item skor menggunakan RectTransform
         RectTransform rectTransform = scoreItem.GetComponent<RectTransform>();
+
         rectTransform.localScale = Vector3.one;
         rectTransform.localPosition = Vector3.zero;
         rectTransform.anchorMin = new Vector2(0.5f, 1f);
         rectTransform.anchorMax = new Vector2(0.5f, 1f);
         rectTransform.pivot = new Vector2(0.5f, 0.5f);
     }
+
 }

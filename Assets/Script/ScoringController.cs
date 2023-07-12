@@ -22,7 +22,7 @@ public class ScoringController : MonoBehaviour
 
     public GameObject ball;
 
-    [SerializeField] private ScoreListManager scoreList;
+    //[SerializeField] private ScoreListManager scoreList;
 
     private void Start()
     {
@@ -94,7 +94,7 @@ public class ScoringController : MonoBehaviour
         gameOverPanel.gameObject.SetActive(true);
         Time.timeScale = 0f; //STop Time
 
-       scoreList.AddListScore();
+       //scoreList.AddListScore();
 
         ball.GetComponent<Rigidbody>().useGravity = false;
         ball.GetComponent<AudioSource>().Stop();
