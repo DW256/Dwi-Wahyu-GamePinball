@@ -9,54 +9,53 @@ public class ScoreListManager : MonoBehaviour
 {
     public GameObject scoreTexts;
     private int[] Listedscores;
-    private int[] savedScores;
+    private List<int> savedScores;
 
     private int index = 0;
 
-    public GameObject scoring;
+    public ScoringController scoring;
     public Transform prefabParent;
 
 
     private void Awake()
     {
-        
+        savedScores = new List<int>();
     }
     public void AddListScore()
     {
-        if(scoring != null)
-        {
-            for (int i = 0; i < savedScores.Length; i++)
-            {
-                if (i == index)
-                {
-                    savedScores[index] = scoring.GetComponent<ScoringController>().totalScore;
-                    index++;
-                    ListingScores();
-                }
+        if (scoring == null) return;
+        savedScores.Add(scoring.totalScore);
+        ListingScores();
 
-            }
-
-        }
-        
-       
+        //if(scoring != null)
+        //{
+        //    for (int i = 0; i < savedScores.Count; i++)
+        //    {
+        //        if (i == index)
+        //        {
+        //            savedScores[index] = scoring.GetComponent<ScoringController>().totalScore;
+        //            index++;
+        //            ListingScores();
+        //        }
+        //    }
+        //}
     }
 
 
     private void ListingScores()
     {
-
         int index= 0;
 
         // Membuat instance prefab scoreItemPrefab sebagai item skor baru
         GameObject scoreItem = Instantiate(scoreTexts, prefabParent);
 
         // Assign data dari array int lainnya ke array scores
-        Listedscores = new int[savedScores.Length];
+        Listedscores = new int[savedScores.Count];
 
         // Mengatur nilai text pada item skor
         TextMeshProUGUI scoreText = scoreItem.GetComponent<TextMeshProUGUI>();
 
-        for (int i = 0; i < savedScores.Length; i++)
+        for (int i = 0; i < savedScores.Count; i++)
         {
             if(i == index)
             {
