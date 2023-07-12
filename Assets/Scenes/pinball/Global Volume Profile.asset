@@ -40,6 +40,7 @@ MonoBehaviour:
   components:
   - {fileID: 2697141533196310929}
   - {fileID: -3673918035021285083}
+  - {fileID: 6611414944726934042}
 --- !u!114 &2697141533196310929
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -56,3 +57,26 @@ MonoBehaviour:
   intensity:
     m_OverrideState: 1
     m_Value: 0.25
+--- !u!114 &6611414944726934042
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f10bf66ae9b09d46a9935e541e29501, type: 3}
+  m_Name: VHSEffectComponent
+  m_EditorClassIdentifier: 
+  active: 1
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.127
+  noiseColor:
+    m_OverrideState: 0
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    hdr: 0
+  scanlinesHeight:
+    m_OverrideState: 1
+    m_Value: 0.95
