@@ -22,6 +22,8 @@ public class ScoringController : MonoBehaviour
 
     public GameObject ball;
 
+    [SerializeField] private ScoreListManager scoreList;
+
     private void Start()
     {
         currentLives = maxLives; // Set nyawa awal
@@ -91,6 +93,8 @@ public class ScoringController : MonoBehaviour
         hudPanel.gameObject.SetActive(false);
         gameOverPanel.gameObject.SetActive(true);
         Time.timeScale = 0f; //STop Time
+
+       scoreList.AddListScore();
 
         ball.GetComponent<Rigidbody>().useGravity = false;
         ball.GetComponent<AudioSource>().Stop();
