@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/pinball.unity
-    guid: 276517b6d4399404c99e225aeee27632
-  - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 7ff5d27900eeced4ea49dd68f694a752
+  - enabled: 1
+    path: Assets/Scenes/pinball.unity
+    guid: 276517b6d4399404c99e225aeee27632
   m_configObjects: {}
