@@ -7,15 +7,16 @@ public class TrapTrigger : MonoBehaviour
 
     public TrapSpawner spawner;
     Vector3 ballPosition;
-
+    [SerializeField] private Transform ballOrigin;
     [SerializeField] private ScoringController scoring;
 
 
     private void Awake()
     {
-        GameObject ball = GameObject.FindGameObjectWithTag("Ball");
-        ballPosition = ball.transform.position;
+        //GameObject ball = GameObject.FindGameObjectWithTag("Ball");
+        //ballPosition = ball.transform.position;
 
+        ballPosition = ballOrigin.position;
     }
     private void OnTriggerEnter(Collider collision)
     {
